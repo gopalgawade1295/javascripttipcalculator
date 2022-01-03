@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Javascript Tip Calculator</title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   </head>
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-sm"></div>
+            <span class="border border-primary">
+               <div class="col-sm">
+                  <div>
+                     <h1></h1>
+                  </div>
+                  <div class="p-3 mb-2 bg-primary text-white">
+                     <h3 class="text-center">Tip Calculator</h3>
+                  </div>
+                  <div class="text-center">
+                     <form>
+                        <h5>Enter your bill amount:</h5>
+                        <h5>₹ <input id="billamount" type="text" maxlength="8"></h5>
+                        <br/>
+                        <h5>How was the service?</h5>
+                        <select id="service">
+                           <option value="0.2">Excellent - 20%</option>
+                           <option value="0.1">Medium - 10%</option>
+                           <option value="0.05">Not so good - 5%</option>
+                        </select>
+                        <br/>
+                        <br/>
+                        <h5>How many people are sharing the bill?</h5>
+                        <h5><input id="people" type="text" maxlength="3"></h5>
+                        <button type="button" class="btn btn-primary" id="calculate">CALCULATE</button>
+                        <br/>
+                        <br/>
+                     </form>
+                  </div>
+                  <div class="text-center">
+                     <h5>Tip amount</h5>
+                     <h5>₹ <span id="tip">0</span></h5>
+                     <h5 id="each">each</h5>
+                  </div>
+               </div>
+            </span>
+            <div class="col-sm"></div>
+         </div>
+      </div>
+      <script src="tipcalculatorjavascript.js"></script>
+   </body>
+</html>
